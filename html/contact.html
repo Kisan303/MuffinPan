@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Student Name: Kisan Rai
+     Student Number: C0910925
+     Project Name: Muffin Pans(Company name: MochiRai) -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MochiRai Muffin Pans: Contact Page</title>
+    <link rel="stylesheet" href="../css/contact.css"> <!-- Link to the external style sheet -->
+
+    <!-- Google Fonts sections-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=DM+Serif+Display:ital@1&family=Oswald:wght@300;500&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- For Favicon section-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon.PNG">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon.PNG">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Banner Section -->
+        <section class="banner">
+            <img src="../media/bannerTest.jpg" alt="Company Banner">
+        </section>
+
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <div>
+                    <a href="index.html" class="logo"> <!-- Logo is now inside the nav element -->
+                        <img src="../media/logo.png" alt="Logo" width="50" height="50">
+                    </a>
+                </div>
+                <a href="index.html">Home</a>&nbsp;&nbsp;
+                <a href="about.html">About</a>&nbsp;&nbsp;
+                <a href="team.html">Our Team</a>&nbsp;&nbsp;
+                <a href="specials.html">Specials</a>&nbsp;&nbsp;
+                <a href="training.html">Training</a>&nbsp;&nbsp;
+                <a href="media.html">Media</a>&nbsp;&nbsp;
+                <a href="faqs.html">FAQs</a>&nbsp;&nbsp;
+                <a href="contact.html">Contact Us</a>&nbsp;&nbsp;
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- Add your main content here -->
+            <div id="contact">
+                <h2>Contact us today to book your muffin pans</h2>
+                <p class="tel-link mobile"><a href="tel:814-555-9228">437 681-0038</a></p>
+                <p class="tab-desk">(437) 661-0038</p>
+                <p class="email-link">Email: <a href="mailto:kisanrai939@gmail.com">MochiRai@MuffinPans.net</a></p>
+                <p>We are located at: 117, Christina Sarnia NT Street</p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.3282445558134!2d-82.4078464!3d42
+                .971358699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88259cdd2b5aba4f%3A0x49551723012003d1!2s
+                117%20Christina%20St%20N%2C%20Sarnia%2C%20ON%20N7T%205T7!5e0!3m2!1sen!2sca!4v1701650110951!5m2!1sen!2sca" allowfullscreen class="map"></iframe>
+            </div>
+
+            <!-- Form Section -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend class="tag1">Contact Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="tag1">Additional Information</legend>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <label for="subscribe">Subscribe to Newsletter:</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit">Submit Request</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            &copy; Copyright 2023. All Rights Reserved.<br>
+            <a href="mailto:c0910925@mylambton.ca">c0910925@mylambton.ca</a><br>
+            Kisan Rai&nbsp;&nbsp; C0910925
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,478 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Banner styles */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    margin: 0;
+    padding: 10px;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(12px, 1vw, 16px);
+    text-transform: uppercase;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2px;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+    margin-right: 10px;
+    border: 2px solid #273746;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.5s ease;
+}
+
+nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.3);
+}
+
+nav a:hover:after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+
+/* Main content styles */
+main {
+    display: block;
+    text-align: center;
+    margin: 0px 0;
+    padding: 0px;
+    border: 0px solid #ddd;
+}
+
+.main-content {
+    text-align: center;
+    background-color: white;
+}
+
+h1 {
+    padding: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #6d6e70;
+    font-size: clamp(25px, 4vw, 100px);
+    font-weight: 700;
+    line-height: .68;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'DM Serif Display', serif;
+    color: #666;
+    line-height: 1.5;
+    padding: 35px 10% 35px 10%;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Home page Hero page */
+#welcomeImg {
+    width: 100%;
+    height: auto;
+    margin: 0px 0;
+    display: block;
+}
+
+.additional-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.info-item {
+    padding: 35px 35px 0 35px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-family: 'Oswald', sans-serif;
+    color: #6d6e70;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.info-item p {
+    font-family: 'DM Serif Display', serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* CSS SECTION FOR SPECIALS.HTML */
+.product-showcase {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product-showcase h2 {
+    text-align: center;
+    margin: 40px;
+    color: #6d6e70;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(22px, 3vw, 90px);
+    font-weight: 400;
+    line-height: .68;
+    text-transform: uppercase;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 4fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product section */
+.product img {
+    width: 190px;
+    height: 200px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Text style for product Heading for weekly sales*/
+.product h3 {
+    margin: 15px;
+    color: #333;
+    font-size: 1.3em;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Text style for product descriptions */
+.product p {
+    margin: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+
+/* Text style for product price */
+.product p1 {
+    color: #DC7633;
+    margin: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3em;
+}
+
+/* Add a subtle box shadow to the product cards for depth */
+.product {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles section */
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #333;
+    color: white;
+    margin: 0px 0;
+}
+
+footer a {
+    color: #CCD1D1;
+    text-decoration: none;
+    text-decoration: underline #E5E8E8;
+    font-size: 15px;
+    
+}
+
+/* RESPONSIVE DESIGN FOR TABLET DESIGN */
+@media screen and (min-width: 630px) and (max-width: 1023px) {
+    .logo img {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 20px;
+        display: flex;
+    }
+
+    nav a {
+        white-space: nowrap;
+        flex: 1;
+        text-align: center;
+        margin: 0 10px;
+        padding: 8px 0;
+    }
+
+    nav a:after {
+        height: 2px;
+    }
+
+    #welcomeImg {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        display: block;
+    }
+
+    .additional-info {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(160px, 1fr));
+        gap: 10px;
+    }
+
+    .info-item {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .info-item p {
+        font-size: 13px;
+    }
+
+    .product-showcase {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .product-showcase h2 {
+        margin: 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 20px;
+        height: auto;
+    }
+
+    .product {
+        border-radius: 8px;
+    }
+
+    .product img {
+        width: 50%;
+        height: 30%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .product h3 {
+        font-size: 1.2em;
+    }
+
+    .product p {
+        margin: 8px;
+    }
+
+    .product p1 {
+        font-size: 1.1em;
+    }
+
+    .product {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+        font-size: 0.8em;
+        text-align: center;
+        font-family: 'Barlow Condensed', sans-serif;
+        background-color: #333;
+        color: white;
+        margin: 0px 0;
+    }
+
+    footer a {
+        color: #CCD1D1;
+        text-decoration: none;
+        text-decoration: underline #E5E8E8;
+        font-size: 15px;
+        
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    .logo img {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        margin: 10px 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: relative;
+        transition: color 0.3s ease, transform 0.5s ease;
+    }
+
+    main {
+        display: block;
+        text-align: center;
+        margin: 0px 0;
+        padding: 0px;
+        border: 0px solid #ddd;
+    }
+
+    .main-content {
+        text-align: center;
+        background-color: white;
+    }
+
+    h1 {
+        padding: 20px;
+        font-family: 'Oswald', sans-serif;
+        color: #6d6e70;
+        font-size: clamp(20px, 4vw, 60px);
+        font-weight: 700;
+        line-height: .90;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-family: 'DM Serif Display', serif;
+        color: #666;
+        line-height: 1.5;
+        padding: 15px 10% 15px 10%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #welcomeImg {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        display: block;
+    }
+
+    .additional-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+
+
+
+    .info-item {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-showcase h2 {
+        
+        line-height: .99;
+    }   
+
+    .product-grid {
+        grid-template-columns: repeat(1, minmax(20px, 4fr));
+        height: auto;
+    }
+
+    .product {
+        grid-row: span 2;
+    }
+
+    .product img {
+        width: 50%;
+        height: auto;
+        border-bottom: none;
+    }
+
+    footer {
+        font-size: 0.8em;
+        text-align: center;
+        font-family: 'Barlow Condensed', sans-serif;
+        background-color: #333;
+        color: white;
+        margin: 0px 0;
+    }
+
+    footer a {
+        color: #CCD1D1;
+        text-decoration: none;
+        text-decoration: underline #E5E8E8;
+        font-size: 15px;
+        
+    }
+}
