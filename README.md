@@ -24,3 +24,5 @@ Main content for index.html
 Product showcase section
 Basic form functionality for login and registration
 Note: The website was completed as part of the assignment and is being pushed to GitHub as part of my project portfolio.
+
+resubmitted file from my previous college project.
